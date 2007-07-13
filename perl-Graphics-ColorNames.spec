@@ -6,7 +6,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Graphics
 %define		pnam	ColorNames
-Summary:	Simple calculations with RGB colors
+Summary:	Defines RGB values for common color names	
 Name:		perl-Graphics-ColorNames
 Version:	1.06
 Release:	1
@@ -21,7 +21,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Simple calculations with RGB colors
+Defines RGB values for common color names.
 
 %prep
 %setup -q %{version}q -n %{pdir}-%{pnam}-%{version}
