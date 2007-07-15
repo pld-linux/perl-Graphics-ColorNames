@@ -1,18 +1,20 @@
 #
 # Conditional build:
-%bcond_without	autodeps	# don't BR packages needed only for resolving deps
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Graphics
 %define		pnam	ColorNames
-Summary:	Defines RGB values for common color names	
+Summary:	Defines RGB values for common color names
+Summary(pl.UTF-8):	Wartości RGB dla popularnych nazw kolorów
 Name:		perl-Graphics-ColorNames
 Version:	1.06
 Release:	1
-License:	same as perl
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://search.cpan.org/CPAN/authors/id/R/RR/RRWO/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Graphics/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	0551cb0b17babcbdef284d5b502731a4
 URL:		http://search.cpan.org/dist/Graphics-ColorNames/
 BuildRequires:	perl-Module-Load
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -23,8 +25,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Defines RGB values for common color names.
 
+%description -l pl.UTF-8
+Wartości RGB dla popularnych nazw kolorów.
+
 %prep
-%setup -q %{version}q -n %{pdir}-%{pnam}-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 %{__perl} Makefile.PL \
