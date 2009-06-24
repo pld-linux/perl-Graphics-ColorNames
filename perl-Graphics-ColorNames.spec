@@ -8,13 +8,13 @@
 Summary:	Defines RGB values for common color names
 Summary(pl.UTF-8):	Wartości RGB dla popularnych nazw kolorów
 Name:		perl-Graphics-ColorNames
-Version:	1.06
+Version:	2.11
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Graphics/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	0551cb0b17babcbdef284d5b502731a4
+# Source0-md5:	047eabbb48d7c29cfebac6f9da8478f6
 URL:		http://search.cpan.org/dist/Graphics-ColorNames/
 BuildRequires:	perl-Module-Load
 BuildRequires:	perl-devel >= 1:5.8.0
