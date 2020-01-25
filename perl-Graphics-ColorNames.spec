@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Graphics
 %define		pnam	ColorNames
 Summary:	Defines RGB values for common color names
